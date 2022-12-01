@@ -1,53 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Tailwind CSS script -->
-		<script src="https://cdn.tailwindcss.com"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Font Awesome cdn -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" />
-		<title>VS Code Clone</title>
-	</head>
-	<body>
-		<!-- Navbar -->
-		<header class="sticky top-0 py-4 bg-[#2C2C32]">
-			<div>
-				<a href="/"
-					><img class="w-6" src="./assets/vs-code-logo.png" alt="vs-code-logo" />
-					<span class="text-white">Visual Studio Code</span>
-					<ul class="text-[#B5B2B7]">
-						<li>Docs</li>
-						<li>Updates</li>
-						<li>Blog</li>
-						<li>API</li>
-						<li>Extensiona</li>
-						<li>FAQ</li>
-						<li>Learn</li>
-					</ul>
-				</a>
-			</div>
-			<div>
-				<form action="">
-					<div>
-						<span>
-							<button>
-								<img src="./assets/search.png" alt="search" />
-							</button>
-						</span>
-						<input type="text" name="search" id="search" placeholder="Search Docs" />
-					</div>
-				</form>
-				<div>
-					<button>
-						<i class="fa-solid fa-download"></i>
-						Download
-					</button>
-				</div>
-			</div>
-		</header>
-	</body>
+    <!-- Tailwind CSS script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" />
+    
+    <title>VS Code Clone</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="bg-[#2C2C32] flex flex-col items-center sticky top-0 z-10">
+        <section
+            class="transition-all duration-300 group bg-[#2C2C32] px-0 m-0 flex justify-between flex-col lg:flex-row w-full lg:2-3/4 xl:w-[80%]">
+            <section class="flex-col flex lg:flex-row lg:items-center relative">
+                <div class="px-3 py-3 flex gap-3 items-center">
+                    <a href="#"><img class="h-7 cursor-pointer" src="./assets/vs-code-logo.png" alt="VS Code Logo"></a>
+                    <a href="#">
+                        <p class="text-xl text-white cursor-pointer">Visual Studio Code</p>
+                    </a>
+                </div>
+                <nav
+                    class="absolute top-10 inset-x-0 grow hidden transition-all duration-300 group-hover:flex lg:flex lg:static bg-[#2C2C32]-800">
+                    <ul class="w-full text-white flex flex-col items-stretch lg:flex-row lg:items-center lg:grow">
+                        <li class="p-3 lg:p-2.5 cursor-pointer text-gray-400 hover:text-white"><a
+                                href="https://code.visualstudio.com/docs">Docs</a></li>
+                        <li class="p-3 lg:p-2.5 cursor-pointer text-gray-400 hover:text-white"><a
+                                href="https://code.visualstudio.com/updates/v1_73">Updates</a></li>
+                        <li class="p-3 lg:p-2.5 cursor-pointer text-gray-400 hover:text-white"><a
+                                href="https://code.visualstudio.com/blogs/2022/11/28/vscode-sandbox">Blog</a></li>
+                        <li class="p-3 lg:p-2.5 cursor-pointer text-gray-400 hover:text-white"><a
+                                href="https://code.visualstudio.com/api">API</a></li>
+                        <li class="p-3 lg:p-2.5 cursor-pointer text-gray-400 hover:text-white"><a
+                                href="https://marketplace.visualstudio.com/VSCode">Extensions</a></li>
+                        <li class="p-3 lg:p-2.5 cursor-pointer text-gray-400 hover:text-white"><a
+                                href="https://code.visualstudio.com/docs/supporting/faq">FAQ</a></li>
+                        <li class="p-3 lg:p-2.5 cursor-pointer text-gray-400 hover:text-white"><a
+                                href="https://code.visualstudio.com/learn">Learn</a></li>
+                        <li class="p-3 lg:p-2.5 cursor-pointer text-gray-400 hover:text-white lg:hidden"><a
+                                href="https://code.visualstudio.com/Search"></a>Search</a></li>
+                        <a href="https://code.visualstudio.com/Download"
+                            class="text-left lg:hidden border-none px-4 py-3 text-white m-0 font-semibold bg-sky-700 hover:bg-sky-800 cursor-pointer"><i
+                                class="px-2 fa-solid fa-download"></i>Download</a>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger icon -->
+                <div class="absolute top-3 right-0 lg:hidden text-white text-2xl mx-4"><i class="fa-solid fa-bars"></i>
+                </div>
+            </section>
+
+            <section class="flex">
+                <!-- Search Bar  -->
+                <div
+                    class="hidden lg:flex text-white bg-[rgba(255,255,255,.08)] hover:bg-[#525257] flex items-center justify-between gap-px">
+                    <span class="mx-2 hidden lg:flex py-3"><button>
+                            <a href="https://code.visualstudio.com/Search"><i class="fa fa-search"
+                                    aria-hidden="true"></i></a>
+                        </button></span>
+                    <input
+                        class="font-semibold hidden h-full xl:flex lg:w-20 xl:w-36 bg-transparent text-sm text-white outline-none py-3"
+                        placeholder="Search Docs" type="text">
+                </div>
+                <!-- Download Button  -->
+                <div class="cursor-pointer hidden lg:flex">
+                    <button
+                        class="border-none px-3 py-3 text-white m-0 font-semibold bg-[#005da5] hover:bg-[#015493] flex gap-2">
+                        <a href="https://code.visualstudio.com/Download" class="flex flex-row gap-2">
+                            <div class="text-white"><i class="fa-solid fa-download"></i></div>
+                            Download
+                        </a>
+                    </button>
+                </div>
+            </section>
+        </section>
+    </header>
+    <main>
+<section>
+<div class="bg-gray">
+
+</div>
+
+<div class="bg-gray">
+
+    <img src="./assets/vs-code-snapshot.png" alt="vs-code-snapshot">
+</div>
+</section>
+    </main>
+    <footer>
+        <section class="bg-[#2C2C32] items-center fixed bottom-0 z-10 text-white w-full text-center p-2 text-xl">
+            <p>
+                Created for <span class="font-bold">Educational</span> and <span class="font-bold">Learning</span> purpose only.
+            </p>
+        </section>
+    </footer>
+</body>
+
 </html>
