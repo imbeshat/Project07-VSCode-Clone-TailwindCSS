@@ -149,8 +149,8 @@
         </section>
 
         <!-- Icon section -->
-        <section class="flex gap-x-10 lg:ml-[120px] max-w-[95%] ml-[20px] lg:max-w-[80%]">
-            <div class="flex flex-col w-[50%] md:flex-row items-center justify-center">
+        <section class="flex flex-row flex-wrap md:flex-nowrap gap-x-10 lg:ml-[120px] max-w-[95%] ml-[20px] lg:max-w-[80%]">
+            <div class="flex flex-row w-[97%] items-center justify-center">
                 <a href="" class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3 hover:bg-[#E3E3E3]">
                     <img src="./assets/light-bulb.png" alt="Intellisense" class="h-[70px]">
                     <p class="text-[17px] md:text-[20px] text-[#444444]">
@@ -164,7 +164,7 @@
                     </p>
                 </a>
             </div>
-            <div class="flex flex-col w-[50%] md:flex-row items-center justify-center">
+            <div class="flex flex-row w-[97%] items-center justify-center">
                 <a href="" class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3 hover:bg-[#E3E3E3]">
                     <img src="./assets/git.png" alt="Git" class="h-[70px]">
                     <p class="text-[17px] md:text-[20px] text-[#444444]">
@@ -181,60 +181,85 @@
         </section>
 
         <!-- Tweets Section -->
-        <section class="flex flex-col bg-[#f5f5f5] md:flex-row">
-            <div class="flex flex-row items-center">
-                <div class="flex flex-row w-[100%] py-4 items-center justify-center gap-y-3">
-                    <a href="">
-                        <img src="./assets/Una.jpg" alt="Una" class="h-[70px] rounded-full">
-                    </a>
+        <section class="bg-[#f5f5f5]">
+            <section class="flex flex-col md:flex-row justify-around items-center bg-[#f5f5f5] lg:w-[85%] lg:ml-[120px]">
+                <div class="flex flex-col justify-center items-center mt-[45px] md:my-[75px] md:mx-[10px] w-[80%] py-4">
+                    
+                        <div class="flex flex-row relative justify-around gap-2">
+                            <div class="min-w-fit">
+                                <a href="">
+                                    <img src="./assets/Una.jpg" alt="Una" class="h-[70px] rounded-full">
+                                </a>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="w-auto">
+                                    <a href="" class="text-sm flex flex-col md:flex-row">
+                                        Una Kravets <br>
+                                        <span class="text-xs md:mt-[3px] md:ml-[4px]">@Una</span>
+                                    </a>
+                                </div>
+                                <div class="absolute right-2 top-0">
+                                    <img src="./assets/twitter.png" alt="twitter" class="opacity-30">
+                                </div>
+                                <div class="text-base font-light leading-6">
+                                    VS <a href="">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️
+                                </div>
+                            </div>
+                        </div>
+                    
                 </div>
-                <div>
-                    <p>
-                        <a href="">
-                            Una Kravets <span>@Una</span>
-                        </a>
-                    </p>
-                    <p class="text-[17px] md:text-[20px] text-[#444444]">
-                        VS <a href="">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️
-                    </p>
+                <div class="flex flex-col justify-center items-center md:my-[75px] md:mx-[10px] w-[80%] py-4">
+                    
+                        <div class="flex flex-row relative justify-around gap-2">
+                            <div class="min-w-fit">
+                                <a href="">
+                                    <img src="./assets/Darren.jpg" alt="Darren" class="h-[70px] rounded-full">
+                                </a>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="w-auto">
+                                    <a href="" class="text-sm flex flex-col md:flex-row">
+                                        Darren <br>
+                                        <span class="text-xs md:mt-[3px] md:ml-[4px]">@MrDarrenV</span>
+                                    </a>
+                                </div>
+                                <div class="absolute right-2 top-0">
+                                    <img src="./assets/twitter.png" alt="twitter" class="opacity-30">
+                                </div>
+                                <div class="text-base font-light leading-6">
+                                    Just as I thought <a href="">@code</a> couldn't get better, out comes its Remote Development plugins that let you remote into containers as a dev environment! 😍
+                                </div>
+                            </div>
+                        </div>
+                    
                 </div>
-            </div>
-            <div class="flex flex-col md:flex-row items-center justify-center">
-                <div class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3">
-                    <a href="">
-                        <img src="./assets/Darren.jpg" alt="Darren" class="h-[70px] rounded-full">
-                    </a>
+                <div class="flex flex-col justify-center items-center mb-[45px] md:my-[75px] md:mx-[10px] w-[80%] py-4">
+                    
+                        <div class="flex flex-row relative justify-around gap-2">
+                            <div class="min-w-fit">
+                                <a href="">
+                                    <img src="./assets/Cassidy.jpg" alt="Intellisense" class="h-[70px] rounded-full">
+                                </a>  
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="w-auto">
+                                    <a href="" class="text-sm flex flex-col md:flex-row">
+                                        Cassidy Williams <br>
+                                        <span class="text-xs md:mt-[3px] md:ml-[4px]">@cassidoo</span>
+                                    </a>
+                                </div>
+                                <div class="absolute right-2 top-0">
+                                    <img src="./assets/twitter.png" alt="twitter" class="opacity-30">
+                                </div>
+                                <div class="text-base font-light leading-6">
+                                    I was a vim fan, but then discovered VS Code's Vim plugin, which lets me add in my vim keybindings. I can maintain my coding style without having to compromise on speed.
+                                </div>
+                            </div>
+                        </div>
+                    
                 </div>
-                <div>
-                    <p>
-                        <a href="">
-                            Darren <span>@MrDarrenV</span>
-                        </a>
-                    </p>
-                    <p class="text-[17px] md:text-[20px] text-[#444444]">
-                        Just as I thought <a href="">@code</a> couldn't get better, out comes its Remote Development plugins that let you remote into containers as a dev environment! 😍
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row items-center justify-center">
-                <div class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3">
-                    <a href="">
-                        <img src="./assets/Cassidy.jpg" alt="Intellisense" class="h-[70px] rounded-full">
-                    </a>
-                </div>
-                <div>
-                    <p>
-                        <a href="">
-                            Cassidy Williams <span>@cassidoo</span>
-                        </a>
-                    </p>
-                    <p class="text-[17px] md:text-[20px] text-[#444444]">
-                        I was a vim fan, but then discovered VS Code's Vim plugin, which lets me add in my vim keybindings. I can maintain my coding style without having to compromise on speed.
-                    </p>
-                </div>
-            </div>
+            </section>
         </section>
-
         <!-- Education Purpose footer -->
         <!-- <footer>
             <section class="bg-[#2C2C32] items-center fixed bottom-0 z-10 text-white w-full text-center p-2 text-xl">
