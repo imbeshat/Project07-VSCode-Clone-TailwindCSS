@@ -12,6 +12,9 @@
             font-family: "Segoe UI", sans-serif;
             max-width: 4320px;
         }
+        td {
+  padding: 3px;
+}
     </style>
 
     <!-- Tailwind CSS script -->
@@ -415,37 +418,41 @@
         </section>
 
         <!-- Download Section for Windows, Linux and Mac -->
-        <section class="flex flex-col md:flex-row justify-evenly items-center py-[70px]">
-            <div class="flex flex-col items-center md:mt-[-5px]">
-                <img src="./assets/windows-logo.png" alt="windows" class="w-[100px]">
+        <section class="flex flex-col md:flex-row justify-center items-center py-[60px] gap-x-[60px]">
+
+            <!-- Windows Section -->
+            <div class="flex flex-col items-center md:mt-[-10px]">
+                <img src="./assets/windows-logo.png" alt="windows" class="w-[90px]">
                 <button class="mt-8 px-[75px] py-[5px] bg-[#0066b8] hover:bg-[#005BA4] text-white text-[18px] leading-loose font-semibold">
                     <img src="./assets/download.svg" alt="download" class="w-[18px] inline-block">
                     Windows
                     <p class="flex items-center text-[12px] ml-[5px]">Windows 8, 10, 11</p>
                 </button>
-                <table class="my-[20px]">
+                <table class="my-[20px] text-[#FFFFFF] text-[12px] border-separate border-spacing-1">
                     <tr>
-                        <td>User Installer</td>
-                        <td>x64</td>
-                        <td>x86</td>
-                        <td>Arm64</td>
+                        <th class="text-[#444444] text-[16px] font-medium">User Installer</th>
+                        <td class="bg-[#0066b8] rounded"><a href="">x64</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">x86</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Arm64</a></td>
                     </tr>
                     <tr>
-                        <td>System Installer</td>
-                        <td>x64</td>
-                        <td>x86</td>
-                        <td>Arm64</td>
+                        <th class="text-[#444444] text-[16px] font-medium">System Installer</th>
+                        <td class="bg-[#0066b8] rounded"><a href="">x64</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">x86</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Arm64</a></td>
                     </tr>
                     <tr>
-                        <td>.zip</td>
-                        <td>x64</td>
-                        <td>x86</td>
-                        <td>Arm64</td>
+                        <th class="text-[#444444] text-[16px] font-medium">.zip</th>
+                        <td class="bg-[#0066b8] rounded"><a href="">x64</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">x86</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Arm64</a></td>
                     </tr>
                 </table>
             </div>
+
+            <!-- Linux Section -->
             <div class="flex flex-col items-center">
-                <img src="./assets/linux-logo.png" alt="windows" class="w-[100px]">
+                <img src="./assets/linux-logo.png" alt="windows" class="w-[90px]">
                 <div class="flex flex-row">
                     <button class="mt-8 px-[35px] py-[5px] bg-[#0066b8] hover:bg-[#005BA4] text-white text-[18px] leading-loose font-semibold mr-[2px]">
                         <img src="./assets/download.svg" alt="download" class="w-[18px] inline-block">
@@ -458,44 +465,46 @@
                         <p class="flex items-center text-[12px] ml-[5px]">Windows 8, 10, 11</p>
                     </button>
                 </div>
-                <table class="my-[20px]">
+                <table class="my-[20px] text-[#FFFFFF] text-[12px] border-separate border-spacing-1">
                     <tr>
-                        <td>.deb</td>
-                        <td>x64</td>
-                        <td>Arm32</td>
-                        <td>Arm64</td>
+                        <th class="text-[#444444] text-[16px] font-medium">.deb</th>
+                        <td class="bg-[#0066b8] rounded"><a href="">x64</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Arm32</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Arm64</a></td>
                     </tr>
                     <tr>
-                        <td>.rpm</td>
-                        <td>x64</td>
-                        <td>Arm32</td>
-                        <td>Arm64</td>
+                        <th class="text-[#444444] text-[16px] font-medium">.rpm</th>
+                        <td class="bg-[#0066b8] rounded"><a href="">x64</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Arm32</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Arm64</a></td>
                     </tr>
                     <tr>
-                        <td>tar.gz</td>
-                        <td>x64</td>
-                        <td>Arm32</td>
-                        <td>Arm64</td>
+                        <th class="text-[#444444] text-[16px] font-medium">tar.gz</th>
+                        <td class="bg-[#0066b8] rounded"><a href="">x64</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Arm32</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Arm64</a></td>
                     </tr>
                     <tr>
-                        <td>Snap</td>
-                        <td colspan="2">x64</td>
+                        <th class="text-[#444444] text-[16px] font-medium">Snap</th>
+                        <td colspan="2" class="bg-[#0066b8] rounded" class="bg-[#0066b8]"><a href="">Snap Store</a></td>
                     </tr>
                 </table>
             </div>
-            <div class="flex flex-col items-center md:mt-[-80px]">
-                <img src="./assets/apple-logo.svg" alt="windows" class="w-[100px]">
+
+            <!-- Mac Section -->
+            <div class="flex flex-col items-center md:mt-[-95px]">
+                <img src="./assets/apple-logo.svg" alt="windows" class="w-[90px]">
                 <button class="mt-8 px-[75px] py-[5px] bg-[#0066b8] hover:bg-[#005BA4] text-white text-[18px] leading-loose font-semibold">
                     <img src="./assets/download.svg" alt="download" class="w-[18px] inline-block">
                     Windows
                     <p class="flex items-center text-[12px] ml-[5px]">Windows 8, 10, 11</p>
                 </button>
-                <table class="my-[20px]">
+                <table class="my-[20px] text-[#FFFFFF] text-[12px] border-separate border-spacing-1">
                     <tr>
-                        <td>.zip</td>
-                        <td>Universal</td>
-                        <td>Intel</td>
-                        <td>Apple silicon</td>
+                        <th class="text-[#444444] text-[16px] font-medium">.zip</th>
+                        <td class="bg-[#0066b8] rounded"><a href="">Universal</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Intel</a></td>
+                        <td class="bg-[#0066b8] rounded"><a href="">Apple silicon</a></td>
                     </tr>
                 </table>
             </div>
