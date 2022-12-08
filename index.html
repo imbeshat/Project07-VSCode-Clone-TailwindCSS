@@ -13,8 +13,8 @@
             max-width: 4320px;
         }
         td {
-  padding: 3px;
-}
+            padding: 3px;
+        }
     </style>
 
     <!-- Tailwind CSS script -->
@@ -543,43 +543,50 @@
         </section>
 
         <!-- Footer section -->
-        <section>
-            <div>
-                <div>
-                    <ul>
+        <section class="bg-[#333333]">
+            <div class="flex flex-col text-[#ffffff] pb-[70px]">
+                <div class="flex flex-row justify-evenly items-center w-[65%] py-[30px]">
+                    <ul class="flex flex-row justify-between text-[14px]">
                         <li>
-                            <span>
+                            <span class="hidden md:block">
                                 Hello from Seattle.
                             </span>
                         </li>
-                        <li>
+                        <li class="hover:text-[#9778cf]">
                             <a href="">
                                 Follow @code
                             </a>
                         </li>
-                        <li>
-                            <img src="./assets/github-icon.svg" alt="github-icon">Star
+                    </ul>
+                    <ul class="flex flex-row justify-between font-semibold">
+                        <li class="flex flex-row text-[11px] py-[1px] px-[5px] bg-[#ffffff] text-[#333333] mr-[2px] rounded">
+                            <a href="">
+                                <img src="./assets/github-icon.svg" alt="github-icon" class="h-[14px] mt-[1px]">
+                            </a>
+                            <a href=""><span class="px-[2px]">Star</span></a>
                         </li>
-                        <li>
+                        <li class="text-[11px] py-[1px] px-[7px] bg-[#ffffff] text-[#000000] ml-[2px] rounded hover:text-[#0071bc]">
                             <a href="">
                                 139,901
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <ul>
-                        <li>Support</li>
-                        <li>Privacy</li>
-                        <li>Terms of Use</li>
-                        <li>License</li>
-                    </ul>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="./assets/microsoft-logo.png" alt="microsoft">
-                    </a>
-                    <span>© 2022 Microsoft</span>
+                <div class="flex flex-row gap-x-[38px] text-[12px]">
+                    <div>
+                        <ul class="flex flex-row gap-x-[25px] ml-[15px]">
+                            <li>Support</li>
+                            <li>Privacy</li>
+                            <li>Terms of Use</li>
+                            <li>License</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-y-[2px]">
+                        <a href="">
+                            <img src="./assets/microsoft-logo.png" alt="microsoft" class="h-[20px]">
+                        </a>
+                        <span>© 2022 Microsoft</span>
+                    </div>
                 </div>
             </div>
         </section>
