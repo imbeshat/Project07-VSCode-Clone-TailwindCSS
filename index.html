@@ -155,13 +155,14 @@
         <!-- Icon section -->
         <section class="flex flex-row flex-wrap md:flex-nowrap gap-x-10 lg:ml-[120px] max-w-[95%] ml-[20px] lg:max-w-[80%]">
             <div class="flex flex-row w-[97%] items-center justify-center">
-                <a href="" class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3 hover:bg-[#E3E3E3]">
+        <section class="flex flex-col md:flex-row lg:w-[80%] my-[60px] lg:ml-[70px] md:ml-[-80px]" id="intellisense">
+                <a href="#intellisense" class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3 hover:bg-[#E3E3E3]">
                     <img src="./assets/light-bulb.png" alt="Intellisense" class="h-[70px]">
                     <p class="text-[17px] md:text-[20px] text-[#444444]">
                         Intellisense
                     </p>
                 </a>
-                <a href="" class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3 hover:bg-[#E3E3E3]">
+                <a href="#debug" class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3 hover:bg-[#E3E3E3]">
                     <img src="./assets/debug.png" alt="Run and Debug" class="h-[70px]">
                     <p class="text-[17px] md:text-[20px] text-[#444444]">
                         Run and Debug
@@ -169,13 +170,13 @@
                 </a>
             </div>
             <div class="flex flex-row w-[97%] items-center justify-center">
-                <a href="" class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3 hover:bg-[#E3E3E3]">
+                <a href="#git" class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3 hover:bg-[#E3E3E3]">
                     <img src="./assets/git.png" alt="Git" class="h-[70px]">
                     <p class="text-[17px] md:text-[20px] text-[#444444]">
                         Built-in Git
                     </p>
                 </a>
-                <a href="" class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3 hover:bg-[#E3E3E3]">
+                <a href="#extension" class="flex flex-col w-[100%] py-4 items-center justify-center gap-y-3 hover:bg-[#E3E3E3]">
                     <img src="./assets/extension.png" alt="Extensions" class="h-[70px]">
                     <p class="text-[17px] md:text-[20px] text-[#444444]">
                         Extensions
@@ -263,7 +264,7 @@
         <!-- Feature Sections -->
 
         <!-- Intellisense feature Section -->
-        <section class="flex flex-col md:flex-row lg:w-[80%] my-[60px] lg:ml-[70px] md:ml-[-80px]">
+        <section class="flex flex-col md:flex-row lg:w-[80%] my-[60px] lg:ml-[70px] md:ml-[-80px]" id="intellisense">
             <div class="md:w-[35%] ml-[100px] lg:ml-[130px]">
                 <img src="./assets/home-intellisense.svg" alt="Intellisense" class="w-[80%] md:w-[100%]">
             </div>
@@ -277,7 +278,7 @@
         </section>
 
         <!-- Debugging feature Section -->
-        <section class="bg-[#F5F5F5] py-[20px]">
+        <section class="bg-[#F5F5F5] py-[20px]" id="debug">
             <section class="bg-[#F5F5F5] flex flex-col-reverse md:flex-row lg:w-[80%] my-[60px] lg:mx-[170px]">
                 <div class="md:w-[65%] mx-[20px] lg:mr-[150px] md:mt-[-20px] lg:mt-[0px] md:mr-[50px]">
                     <h2 class="text-[18px] mt-[10px] mb-[30px] lg:text-[30px] lg:mt-[-10px] md:text-[27px] font-extralight">
@@ -293,7 +294,7 @@
         </section>
 
         <!-- Git feature Section -->
-        <section class="flex flex-col md:flex-row lg:w-[80%] my-[60px] lg:ml-[70px] md:ml-[-80px]">
+        <section class="flex flex-col md:flex-row lg:w-[80%] my-[60px] lg:ml-[70px] md:ml-[-80px]" id="git">
             <div class="md:w-[35%] ml-[100px] lg:ml-[130px]">
                 <img src="./assets/home-git.svg" alt="Git" class="w-[80%] md:w-[100%]">
             </div>
@@ -307,7 +308,7 @@
         </section>
 
         <!-- Extension feature Section -->
-        <section class="bg-[#F5F5F5] py-[20px]">
+        <section class="bg-[#F5F5F5] py-[20px]" id="extension">
             <section class="bg-[#F5F5F5] flex flex-col-reverse md:flex-row lg:w-[80%] my-[60px] lg:mx-[170px]">
                 <div class="md:w-[65%] mx-[20px] lg:mr-[150px] md:mt-[-20px] lg:mt-[0px] md:mr-[50px]">
                     <h2 class="text-[18px] mt-[10px] mb-[30px] lg:text-[30px] lg:mt-[-10px] md:text-[27px] font-extralight">
